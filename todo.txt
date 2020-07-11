@@ -2,8 +2,8 @@ x get the gobin directory
 x iterate through
 x if it's not there, spit it out
 x otherwise upgrade it. 
+x print an error if gomod is not set
 * if gobin is set, use it
-* print an error if gomod is not set
 
 
 I want to be able to update my go tools with the same one command ease as I do with brew

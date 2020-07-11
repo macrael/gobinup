@@ -3,6 +3,7 @@
 if [ "$(go env GO111MODULE)" != "on" ]
 then
 	echo "gobinup requires go module mode to be enabled."
+	echo "add \`export GO111MODULE=on\` to your profile"
 	exit 1
 fi
 
