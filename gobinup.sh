@@ -2,7 +2,7 @@
 
 if [ "$(go env GO111MODULE)" != "on" ]
 then
-	echo "gobinup requires gomodule mode to be enabled."
+	echo "gobinup requires go module mode to be enabled."
 	exit 1
 fi
 
