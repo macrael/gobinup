@@ -1,0 +1,31 @@
+x get the gobin directory
+x iterate through
+x if it's not there, spit it out
+x otherwise upgrade it. 
+* if gobin is set, use it
+* print an error if gomod is not set
+
+
+I want to be able to update my go tools with the same one command ease as I do with brew
+
+This means I need a registry somewhere of the tools I have installed
+
+sounds like a go mod file
+
+
+USAGE
+
+`gobinup` update all installed go packages to the latest version
+
+
+FACTS
+
+* go get is the right way to do this
+* it behaves differently in mod mode and gopath mode
+* the basic way you get something is `go get golang.org/x/tools/gopls`
+
+
+You can set mod mode with GO111MODULE=on and use `go get` outside of a package. 
+
+then, `go version -m $(go env GOPATH)/bin/goimports` will get you the package import path. 
+
