@@ -16,6 +16,6 @@ do
 		echo "$gobin doesn't have module information compiled in it."
 		echo "In order for gobinup to upate it, you need to \`go get\` it in module mode"
 	else
-		go get -u "$package"
+		go install "$package@latest"
 	fi
 done
